@@ -10,7 +10,7 @@ import kotlin.coroutines.CoroutineContext
 /**
  * Converts the HBase 2 async scan API to a Kotlin Channel.
  */
-class AdvancedScanResultConsumerToChannelAdapter(
+class HBaseAsyncScannerChannelAdapter(
     val chan: SendChannel<Result> = Channel(),
     val ctx: CoroutineContext
 ): AdvancedScanResultConsumer {
